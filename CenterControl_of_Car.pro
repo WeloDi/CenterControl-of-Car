@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -9,13 +9,31 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    bilibili.cpp \
+    ctrlcenter.cpp \
+    gaodemap.cpp \
     main.cpp \
+    qqmusic.cpp \
+    voiceasst.cpp \
+    weather.cpp \
     widget.cpp
 
 HEADERS += \
+    bilibili.h \
+    ctrlcenter.h \
+    gaodemap.h \
+    qqmusic.h \
+    voiceasst.h \
+    weather.h \
     widget.h
 
 FORMS += \
+    bilibili.ui \
+    ctrlcenter.ui \
+    gaodemap.ui \
+    qqmusic.ui \
+    voiceasst.ui \
+    weather.ui \
     widget.ui
 
 # Default rules for deployment.

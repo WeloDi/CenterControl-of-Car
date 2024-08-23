@@ -5,10 +5,19 @@
 #include <QScreen>
 #include <QPixmap>
 #include <QLabel>
-#include <QVBoxLayout>
+#include <QHBoxLayout>
 #include <QTimer>
 #include <QDateTime>
 #include <QGridLayout>
+#include <QPushButton>
+#include <QStackedWidget>
+#include "qqmusic.h"
+#include "bilibili.h"
+#include "ctrlcenter.h"
+#include "gaodemap.h"
+#include "weather.h"
+#include "voiceasst.h"
+
 using namespace std;
 
 QT_BEGIN_NAMESPACE
@@ -28,18 +37,48 @@ public:
 
 private:
     Ui::Widget *ui;
+    //background
     int width = 1024;
     int height = 600;
     QLabel *wallpaper;
     QLabel *timeLabel;
     QLabel *dateLabel;
-    QLabel *menuBar;
+
+    //menu bar
+    QWidget *menuBar;
+    QPushButton *btn_home;
+    QPushButton *btn_music;
+    QPushButton *btn_map;
+    QPushButton *btn_voice;
+    QPushButton *btn_centerCtrl;
+    QPushButton *btn_bilibili;
+    QPushButton *btn_weather;
+    QHBoxLayout *layout;
+
+    //APP
+    QStackedWidget *stackedWidget;
+    CtrlCenter *page_ctrlCenter;
+    VoiceAsst *page_voiceAsst;
+    QQMusic *page_qqMusic;
+    BiLiBiLi *page_Bilibili;
+    GaoDeMAP *page_gaoDe;
+    Weather *page_weather;
 
     void initScreen();
     void initTime();
     void initMenuBar();
+    void initApp();
 
 private slots:
     void updateTime();
+    void onbtn_homeClicked();
+    void onbtn_centerCtrlClicked();
+    void onbtn_voiceClicked();
+    void onbtn_musicClicked();
+    void onbtn_bilibiliClicked();
+    void onbtn_mapClicked();
+    void onbtn_weatherClicked();
+
+
 };
 #endif // WIDGET_H

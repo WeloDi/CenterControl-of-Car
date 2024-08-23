@@ -1,6 +1,12 @@
 <RCC>
     <qresource prefix="/">
-        <file>resource/image/green.png</file>
         <file>resource/image/car.jpg</file>
+        <file>resource/image/QQ音乐.png</file>
+        <file>resource/image/高德地图.png</file>
+        <file>resource/image/控制中心.png</file>
+        <file>resource/image/bilibili.png</file>
+        <file>resource/image/siri.png</file>
+        <file>resource/image/天气.png</file>
+        <file>resource/image/home.png</file>
     </qresource>
 </RCC>
