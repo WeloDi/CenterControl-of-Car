@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     bilibili.cpp \
+    car.cpp \
     ctrlcenter.cpp \
     gaodemap.cpp \
     main.cpp \
@@ -20,6 +21,7 @@ SOURCES += \
 
 HEADERS += \
     bilibili.h \
+    car.h \
     ctrlcenter.h \
     gaodemap.h \
     qqmusic.h \
@@ -29,6 +31,7 @@ HEADERS += \
 
 FORMS += \
     bilibili.ui \
+    car.ui \
     ctrlcenter.ui \
     gaodemap.ui \
     qqmusic.ui \

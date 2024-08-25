@@ -1,20 +1,20 @@
-#ifndef GAODEMAP_H
-#define GAODEMAP_H
+#ifndef CAR_H
+#define CAR_H
 
 #include <QWidget>
 #include <QLabel>
 namespace Ui
 {
-class GaoDeMAP;
+class Car;
 }
 
-class GaoDeMAP : public QWidget
+class Car : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit GaoDeMAP(QWidget *parent = nullptr);
-    ~GaoDeMAP();
+    explicit Car(QWidget *parent = nullptr);
+    ~Car();
 
     //background
     int width = 1024;
@@ -24,7 +24,8 @@ public:
     void initScreen();
 
 private:
-    Ui::GaoDeMAP *ui;
+
+    Ui::Car *ui;
 };
 
-#endif // GAODEMAP_H
+#endif // CAR_H

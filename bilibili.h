@@ -2,7 +2,7 @@
 #define BILIBILI_H
 
 #include <QWidget>
-
+#include <QLabel>
 namespace Ui
 {
 class BiLiBiLi;
@@ -16,8 +16,12 @@ public:
     explicit BiLiBiLi(QWidget *parent = nullptr);
     ~BiLiBiLi();
 
+    //background
     int width = 1024;
     int height = 600;
+    QLabel *wallpaper;
+
+    void initScreen();
 
 private:
     Ui::BiLiBiLi *ui;

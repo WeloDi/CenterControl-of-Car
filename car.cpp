@@ -1,24 +1,23 @@
-#include "bilibili.h"
-#include "ui_bilibili.h"
+#include "car.h"
+#include "ui_car.h"
 
-BiLiBiLi::BiLiBiLi(QWidget *parent)
+Car::Car(QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::BiLiBiLi)
+    , ui(new Ui::Car)
 {
     ui->setupUi(this);
+
     wallpaper = new QLabel(this);
     wallpaper->move(0,0);
-
 }
 
-BiLiBiLi::~BiLiBiLi()
+Car::~Car()
 {
     delete ui;
 }
 
-void BiLiBiLi::initScreen()
+void Car::initScreen()
 {
     this->resize(width,height);
     wallpaper->setPixmap(QPixmap(":/resource/music/蓝色渐变.jpg").scaled(width,height));
 }
-

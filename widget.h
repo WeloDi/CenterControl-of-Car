@@ -6,6 +6,7 @@
 #include <QPixmap>
 #include <QLabel>
 #include <QHBoxLayout>
+#include <QVBoxLayout>
 #include <QTimer>
 #include <QDateTime>
 #include <QGridLayout>
@@ -17,6 +18,7 @@
 #include "gaodemap.h"
 #include "weather.h"
 #include "voiceasst.h"
+#include "car.h"
 
 using namespace std;
 
@@ -41,10 +43,19 @@ private:
     int width = 1024;
     int height = 600;
     QLabel *wallpaper;
+
+
+    //status bar
+    QWidget *statusBar;
+    int status_w;
+    int status_h;
     QLabel *timeLabel;
-    QLabel *dateLabel;
+    QLabel *wifiLabel;
+    QHBoxLayout *layout_status;
 
     //menu bar
+    int menu_w;
+    int menu_h;
     QWidget *menuBar;
     QPushButton *btn_home;
     QPushButton *btn_music;
@@ -53,21 +64,25 @@ private:
     QPushButton *btn_centerCtrl;
     QPushButton *btn_bilibili;
     QPushButton *btn_weather;
-    QHBoxLayout *layout;
+    QPushButton *btn_car;
+    QVBoxLayout *layout;
 
     //APP
     QStackedWidget *stackedWidget;
     CtrlCenter *page_ctrlCenter;
     VoiceAsst *page_voiceAsst;
-    QQMusic *page_qqMusic;
+    QQMusic *page_Music;
     BiLiBiLi *page_Bilibili;
     GaoDeMAP *page_gaoDe;
     Weather *page_weather;
+    Car *page_car;
+
 
     void initScreen();
-    void initTime();
-    void initMenuBar();
     void initApp();
+    void initStatusBar();
+    void initMenuBar();
+    void initlayout();
 
 private slots:
     void updateTime();
@@ -78,6 +93,7 @@ private slots:
     void onbtn_bilibiliClicked();
     void onbtn_mapClicked();
     void onbtn_weatherClicked();
+    void onbtn_carClicked();
 
 
 };

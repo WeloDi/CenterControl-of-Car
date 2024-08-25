@@ -1,12 +1,26 @@
 <RCC>
     <qresource prefix="/">
-        <file>resource/image/car.jpg</file>
-        <file>resource/image/QQ音乐.png</file>
-        <file>resource/image/高德地图.png</file>
-        <file>resource/image/控制中心.png</file>
-        <file>resource/image/bilibili.png</file>
-        <file>resource/image/siri.png</file>
-        <file>resource/image/天气.png</file>
-        <file>resource/image/home.png</file>
+        <file>resource/statusbar/wifi_lv1.png</file>
+        <file>resource/statusbar/wifi_lv2.png</file>
+        <file>resource/statusbar/wifi_lv3.png</file>
+        <file>resource/statusbar/wifi_off.png</file>
+        <file>resource/appIcon/音乐_off.png</file>
+        <file>resource/appIcon/音乐_on.png</file>
+        <file>resource/appIcon/导航_off.png</file>
+        <file>resource/appIcon/导航_on.png</file>
+        <file>resource/appIcon/控制_off.png</file>
+        <file>resource/appIcon/控制_on.png</file>
+        <file>resource/appIcon/摄像头_off.png</file>
+        <file>resource/appIcon/摄像头_on.png</file>
+        <file>resource/appIcon/主页_off.png</file>
+        <file>resource/appIcon/主页_on.png</file>
+        <file>resource/appIcon/天气_off.png</file>
+        <file>resource/appIcon/天气_on.png</file>
+        <file>resource/appIcon/车辆_off.png</file>
+        <file>resource/appIcon/车辆_on.png</file>
+        <file>resource/music/蓝色渐变.jpg</file>
+        <file>resource/home/background.jpg</file>
+        <file>resource/appIcon/siri_off.png</file>
+        <file>resource/appIcon/siri_on.png</file>
     </qresource>
 </RCC>
