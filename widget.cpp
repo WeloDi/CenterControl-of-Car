@@ -210,6 +210,7 @@ void Widget::initApp()
     page_weather->width = this->width;
     page_weather->height = this->height;
     page_weather->initScreen();
+    // page_weather->initLayout();
 
     //车辆
     page_car = new Car(this);

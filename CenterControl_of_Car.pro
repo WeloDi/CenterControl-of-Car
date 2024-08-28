@@ -17,6 +17,7 @@ SOURCES += \
     qqmusic.cpp \
     voiceasst.cpp \
     weather.cpp \
+    weathermodule.cpp \
     widget.cpp
 
 HEADERS += \
@@ -27,6 +28,7 @@ HEADERS += \
     qqmusic.h \
     voiceasst.h \
     weather.h \
+    weathermodule.h \
     widget.h
 
 FORMS += \
@@ -37,6 +39,7 @@ FORMS += \
     qqmusic.ui \
     voiceasst.ui \
     weather.ui \
+    weathermodule.ui \
     widget.ui
 
 # Default rules for deployment.

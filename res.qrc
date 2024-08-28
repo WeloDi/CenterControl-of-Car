@@ -22,5 +22,42 @@
         <file>resource/home/background.jpg</file>
         <file>resource/appIcon/siri_off.png</file>
         <file>resource/appIcon/siri_on.png</file>
+        <file>resource/ctrlCenter/lsider_background.png</file>
+        <file>resource/weather/位置.png</file>
+        <file>resource/weather/空气.png</file>
+        <file>resource/weather/icons/100.svg</file>
+        <file>resource/weather/icons/101.svg</file>
+        <file>resource/weather/icons/102.svg</file>
+        <file>resource/weather/icons/103.svg</file>
+        <file>resource/weather/icons/104.svg</file>
+        <file>resource/weather/icons/150.svg</file>
+        <file>resource/weather/icons/151.svg</file>
+        <file>resource/weather/icons/152.svg</file>
+        <file>resource/weather/icons/153.svg</file>
+        <file>resource/weather/icons/300.svg</file>
+        <file>resource/weather/icons/301.svg</file>
+        <file>resource/weather/icons/302.svg</file>
+        <file>resource/weather/icons/303.svg</file>
+        <file>resource/weather/icons/304.svg</file>
+        <file>resource/weather/icons/305.svg</file>
+        <file>resource/weather/icons/306.svg</file>
+        <file>resource/weather/icons/307.svg</file>
+        <file>resource/weather/icons/308.svg</file>
+        <file>resource/weather/icons/309.svg</file>
+        <file>resource/weather/icons/310.svg</file>
+        <file>resource/weather/icons/311.svg</file>
+        <file>resource/weather/icons/312.svg</file>
+        <file>resource/weather/icons/313.svg</file>
+        <file>resource/weather/icons/314.svg</file>
+        <file>resource/weather/icons/315.svg</file>
+        <file>resource/weather/icons/316.svg</file>
+        <file>resource/weather/icons/317.svg</file>
+        <file>resource/weather/icons/318.svg</file>
+        <file>resource/weather/icons/350.svg</file>
+        <file>resource/weather/icons/351.svg</file>
+        <file>resource/weather/icons/399.svg</file>
+        <file>resource/weather/icons/400.svg</file>
+        <file>resource/weather/icons/401.svg</file>
+        <file>resource/weather/sky.jpg</file>
     </qresource>
 </RCC>
