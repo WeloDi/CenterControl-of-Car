@@ -41,7 +41,6 @@ void Widget::initStatusBar()
     status_w = width;
     status_h = height * 0.05;
     statusBar = new QWidget(this);
-    // statusBar->setStyleSheet("background-color:rgb(0,0,0);");
     statusBar->setGeometry(QRect(0, 0, status_w, status_h));
 
     //时间显示
@@ -219,7 +218,6 @@ void Widget::initApp()
 
     // 初始化StackedWidget用于存放不同应用的界面
     stackedWidget = new QStackedWidget(this);
-    // stackedWidget->setGeometry(menu_w, 30, this->width - menu_w, this->height - status_h);
     stackedWidget->setGeometry(0, 0, width, height );
 
     stackedWidget->addWidget(defaultPage);

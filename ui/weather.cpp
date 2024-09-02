@@ -9,7 +9,7 @@ Weather::Weather(QWidget *parent)
 
     wallpaper = new QLabel(this);
     wallpaper->move(0,0);
-    wallpaper->lower();
+    wallpaper->raise();
 
     //创建定时任务：实时获取天气信息
     timerUpdata = new QTimer(this);
@@ -26,25 +26,23 @@ Weather::~Weather()
 
 void Weather::initScreen()
 {
+
     this->setFixedSize(width,height);
-    // this->setStyleSheet("background-color: rgba(138, 180, 221, 1)");
-    // wallpaper->setPixmap(QPixmap(":/resource/weather/sky.jpg").scaled(width,height));
+    this->setStyleSheet("background-color: rgba(138, 180, 221, 1)");
+    wallpaper->setFixedSize(width,height);
+    wallpaper->setStyleSheet("background-color: rgba(138, 180, 221, 0.2);");
 
     //尺寸
     int menuBar_width = width / 12;
     int statusBar_height = height * 0.05;
-    int left_width = (width - menuBar_width)/2 - 20;
+    int left_width = (width - menuBar_width)/2 - 10;
     int left_height = height - statusBar_height;
 
     ui->leftwidget->setFixedSize(left_width,left_height);
     ui->rightwidget->setFixedSize(left_width,left_height);
-    // ui->leftwidget->setStyleSheet("background-color: rgba(0,0,0,0);");
-    // ui->rightwidget->setStyleSheet("background:transparent;");
 
     ui->cur_widget->setFixedSize(left_width,left_height/2-10);
     ui->module_widget->setFixedSize(left_width,left_height/2-10);
-    // ui->cur_widget->setStyleSheet("background:transparent;");
-    // ui->module_widget->setStyleSheet("background:transparent;");
 
     ui->line1->setFixedHeight((left_height / 2 - 10) * 0.2);
     ui->line2->setFixedHeight((left_height / 2 - 10) * 0.6);
@@ -59,10 +57,10 @@ void Weather::initScreen()
     ui->weather_icon->setFixedSize(left_width/3,left_width/3);
     ui->weather_icon->setScaledContents(true);
 
-    ui->humidity->setStyleSheet("background-color: rgba(128, 128, 128, 0.5);border-radius: 40px;");
-    ui->wind->setStyleSheet("background-color: rgba(128, 128, 128, 0.5);border-radius: 40px;");
-    ui->pressure->setStyleSheet("background-color: rgba(128, 128, 128, 0.5);border-radius: 40px;");
-    ui->feelsLike->setStyleSheet("background-color: rgba(128, 128, 128, 0.5);border-radius: 40px;");
+    ui->humidity->setStyleSheet("background-color: rgba(128, 128, 128, 0.5);border-radius: 30px;");
+    ui->wind->setStyleSheet("background-color: rgba(128, 128, 128, 0.5);border-radius: 30px;");
+    ui->pressure->setStyleSheet("background-color: rgba(128, 128, 128, 0.5);border-radius: 30px;");
+    ui->feelsLike->setStyleSheet("background-color: rgba(128, 128, 128, 0.5);border-radius: 30px;");
     ui->humidity_icon->setFixedSize(left_width/2/3,left_height/4/2);
     ui->wind_icon->setFixedSize(left_width/2/3,left_height/4/2);
     ui->pressure_icon->setFixedSize(left_width/2/3,left_height/4/2);
@@ -94,7 +92,6 @@ void Weather::initScreen()
     ui->Weather_icon6->setScaledContents(true);
     ui->Weather_icon7->setFixedSize(left_width/12,left_width/12);
     ui->Weather_icon7->setScaledContents(true);
-
 }
 
 void Weather::updateFuture(QLabel *day_txt, QLabel *Weather_txt, QLabel *Weather_icon, QLabel *TempMin, QLabel *TempMax,int index)
@@ -137,7 +134,7 @@ void Weather::updateAll()
                 updateFuture(ui->day_txt2, ui->Weather_txt2,ui->Weather_icon2, ui->TempMin2, ui->TempMax2,1);
                 break;
             case 2:
-                updateFuture(ui->day_txt3, ui->Weather_txt3,ui->Weather_icon2, ui->TempMin3, ui->TempMax3,2);
+                updateFuture(ui->day_txt3, ui->Weather_txt3,ui->Weather_icon3, ui->TempMin3, ui->TempMax3,2);
                 break;
             case 3:
                 updateFuture(ui->day_txt4, ui->Weather_txt4,ui->Weather_icon4, ui->TempMin4, ui->TempMax4,3);

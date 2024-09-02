@@ -1,7 +1,9 @@
-QT       += core gui network
+QT       += core gui network webenginewidgets
+
+# LIBS  += -L/home/deng/linux/tool/openssl/lib/ -lcrypto -lssl
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
+# use_lld_linker
 CONFIG += c++17
 
 # You can make your code fail to compile if it uses deprecated APIs.
@@ -13,8 +15,8 @@ SOURCES += \
     ui/bilibili.cpp \
     ui/car.cpp \
     ui/ctrlcenter.cpp \
-    ui/gaodemap.cpp \
     ui/main.cpp \
+    ui/map.cpp \
     ui/qqmusic.cpp \
     ui/voiceasst.cpp \
     ui/weather.cpp \
@@ -25,7 +27,7 @@ HEADERS += \
     ui/bilibili.h \
     ui/car.h \
     ui/ctrlcenter.h \
-    ui/gaodemap.h \
+    ui/map.h \
     ui/qqmusic.h \
     ui/voiceasst.h \
     ui/weather.h \
@@ -35,7 +37,7 @@ FORMS += \
     ui/bilibili.ui \
     ui/car.ui \
     ui/ctrlcenter.ui \
-    ui/gaodemap.ui \
+    ui/map.ui \
     ui/qqmusic.ui \
     ui/voiceasst.ui \
     ui/weather.ui \

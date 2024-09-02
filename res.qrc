@@ -44,5 +44,21 @@
         <file>resource/weather/icons/100.png</file>
         <file>resource/weather/icons/101.png</file>
         <file>resource/weather/icons/104.png</file>
+        <file>resource/weather/icons/102.png</file>
+        <file>resource/weather/icons/103.png</file>
+        <file>resource/weather/icons/150.png</file>
+        <file>resource/weather/icons/152.png</file>
+        <file>resource/weather/icons/153.png</file>
+        <file>resource/weather/icons/300.png</file>
+        <file>resource/weather/icons/301.png</file>
+        <file>resource/weather/icons/309.png</file>
+        <file>resource/weather/icons/311.png</file>
+        <file>resource/weather/icons/312.png</file>
+        <file>resource/weather/icons/313.png</file>
+        <file>resource/weather/icons/314.png</file>
+        <file>resource/weather/icons/302.png</file>
+        <file>resource/weather/icons/303.png</file>
+        <file>resource/weather/icons/304.png</file>
+        <file>resource/weather/icons/305.png</file>
     </qresource>
 </RCC>

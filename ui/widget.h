@@ -15,7 +15,7 @@
 #include "qqmusic.h"
 #include "bilibili.h"
 #include "ctrlcenter.h"
-#include "gaodemap.h"
+#include "map.h"
 #include "weather.h"
 #include "voiceasst.h"
 #include "car.h"

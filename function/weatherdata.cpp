@@ -30,25 +30,34 @@ void WeatherData::upData(int type)
     switch(type)
     {
         case 1:
+            qDebug() << "1111";
             //根据IP获取城市名（高德API）
             url = QUrl("https://restapi.amap.com/v3/ip?&output=json&key=c76ff9110dfdbf5bb9cbcd89b8fb7e8f");
             break;
         case 2:
+            qDebug() << "2222";
             //和风天气根据城市名获取code
             url = QUrl("https://geoapi.qweather.com/v2/city/lookup?key=0f7271f1c38e42b7b7b5a0951e4dd6f9&location=" + info.cityName);
             break;
         case 3:
+            qDebug() << "3333";
             //和风天气获取当天天气信息
             url = QUrl("https://devapi.qweather.com/v7/weather/now?key=0f7271f1c38e42b7b7b5a0951e4dd6f9&location=" + info.citycode);
             break;
         case 4:
+            qDebug() << "4444";
             //和风天气获取未来7天信息
             url = QUrl("https://devapi.qweather.com/v7/weather/7d?key=0f7271f1c38e42b7b7b5a0951e4dd6f9&location=" + info.citycode);
             break;
         default:
             break;
     }
-    myNetAccessManager->get(QNetworkRequest(url));
+    QNetworkRequest request(url);
+    QSslConfiguration config = QSslConfiguration::defaultConfiguration();
+    config.setProtocol(QSsl::AnyProtocol);
+    config.setPeerVerifyMode(QSslSocket::VerifyNone);
+    request.setSslConfiguration(config);
+    myNetAccessManager->get(request);
 }
 
 void WeatherData::parse_json(QByteArray &byteArray)
